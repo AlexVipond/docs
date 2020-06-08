@@ -2,7 +2,6 @@
     "gitbook": "3.1.0",
     "title": "Kumu Help Docs",
     "description": "",
-    "plugins": ["algolia", "heading-anchors"],
     "structure": {
         "readme": "welcome.md"
     },
