@@ -2,7 +2,7 @@
 
 **Use**
 
-Add a control to activate [showcase](../advanced-settings.md#showcasing) for a given field or set of selectors via a list of labels, buttons or a dropdown menu.
+Add a control to activate [showcase](/guides/showcase.html) for a given field or set of selectors via a list of labels, buttons or a dropdown menu.
 
 **Example**
 
@@ -19,7 +19,7 @@ Showcase by field:
 
 ```
 
-Showcase using custom [selectors](../selectors.html#selectors):
+Showcase using custom [selectors](/guides/selectors.html#selectors):
 
 ```
 @controls {
@@ -58,12 +58,14 @@ Showcase using custom [selectors](../selectors.html#selectors):
 * `summary` override the summary that's shown for the current selection (for `as: dropdown`). The summary will be shown regardless of what's selected so there's no need to use `placeholder` in this case.
 * `default` defines which field values should be selected by default (for `by: "field"` only). Use `select-all` to select everything by default.
 
+[Check out our controls reference](/guides/controls/controls-reference.md) to see the full list of properties and values recognized by the showcase control.
+
 **Supported children**
 
 If you want to use custom selectors to build the showcase, you'll need to list each option out separately. The options are defined by `option` blocks nested within the control and each `option` supports the following properties:
 
 * `label` the text to display for that option
-* `selector` the [selector](../selectors.html#selectors) to use for the showcase
+* `selector` the [selector](/guides/selectors.html#selectors) to use for the showcase
 * `default`
   * `true` value is selected by default
   * `false` value is unselected by default

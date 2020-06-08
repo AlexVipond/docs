@@ -1,90 +1,67 @@
 # Settings
 
-You can edit settings for each project, map and view in Kumu.
+You can edit settings for each [project](/overview/kumus-architecture.html#projects), [map](/overview/kumus-architecture.html#maps), and [view](/overview/kumus-architecture.html#views) in Kumu.
 
-*Before diving in, make sure you:*
+![settings locations](/images/settings-locations.jpg)
 
-* [Understand what a view is](../guides/views.md)
-* [Know how maps relate to projects](../overview/data-architecture.md)
-
-*After reading this you'll know:*
-
-* Where to find project, map, and view settings
-* Which options are available in each
-* Where to go for additional guidance on changing the settings
-
-## Locations of the various settings menus
-
-![](/images/settings-locations.jpg)
 
 ## Project settings
 
-Project settings are accessed via the menu in the upper left of your map.
+Project settings are accessed via the menu icon <i class="fa fa-bars"></i> in the upper left of your map (on the [top toolbar](/overview/map-editor.html#top-toolbar)).
 
 <span class="small plain">
-![](../images/project-settings.jpg)
+![project settings](/images/project-settings.jpg)
 </span>
 
 Within the project settings, you have the following options:
 
-* **Overview.** Add a project overview for everyone to see. On this page, you can also add a project license and access our Licensing Guide if you need help.
-* **Presentations.** Create, edit, and publish [presentations](../guides/presentations.md) to walk others through your project. Break apart complexity using the slide format of presentations, adding text, images, videos, and snapshots of your maps.
-* **Issues.** Access issues for the particular project. Issues give you and your team a forum to discuss the project and suggest changes and improvements as you’re collaborating on a map.
-* **Help.** Access videos, docs, and keyboard shortcuts.
-* **Fields.** Manage the [fields](../guides/fields.md) for your project. Add and edit new fields, change field relevance (which fields appear in the profiles for elements, connections, and loops), and manage field appearance and behavior.
-* **Members.** Give others access to edit your map. Learn more about [collaborating in Kumu](../overview/collaboration.md).
-* **Embeds.** Create an iFrame to [embed](../guides/embeds.md) your map on another site.  
-* **Trash.** View and empty the project trash. If you delete an element from a map (and it isn't included in any other map), it ends up in the trash. Remember to empty your trash before reimporting a spreadsheet to make sure the elements and connections from the trash aren't pulled back into the map!
-* **Admin.** Switch from public to private (and vice versa), delete a project, or rename a project.
-* **Fork project.** Create a copy of a project. Learn more about [forking](../guides/forking.md).
-* **Switch project.** Navigate back to your dashboard to work in a different project.
+* **Overview.** Add a project overview and a [license](/guides/licensing.html) for everyone to see.
+* **Presentations.** Create, edit, and publish [presentations](/guides/presentations.md) to walk others through your project. Break down your complex project using the slide format of presentations, adding text, images, videos, and fully interactive map slides.
+* <span data-placement="top" data-html="true" title="Available for organizations only" style="border-bottom: 1.5px dashed black"><strong>Activity feed.</strong></span> Use the activity feed to keep tabs on who’s making each change across your project.
+* **Help.** Access how-to videos, the docs, [our open Slack team](chat.kumu.io), and a list of keyboard shortcuts.
+* **Fields.** Manage the [fields](/guides/fields.html) for your project. Add and edit new fields, change field relevance (which fields appear in the profiles for elements, connections, and loops), and manage field appearance and behavior.
+* **Members.** Give other people access to edit your map. [Learn more about collaborating in Kumu](/overview/collaboration.md).
+* **Embeds.** Create a shareable link to a map, or create an iFrame to [embed your map](/guides/share-and-embed.html) on another site.
+* **Trash.** View and empty the [trash](/overview/kumus-architecture.html#trash) for your project.
+* **Admin.** Change privacy, rename the project, <span data-placement="top" data-html="true" title="Available for organizations only"><a href="/guides/archiving-projects.html">archive the project</a></span>, or delete the project. You can also enable/disable the image proxy when [working with images](/guides/images.html).
+* **Add-ons.** Install one of Kumu's [add-ons](/guides/add-ons.html).
+* **Fork project.** Create a copy of a project. [Learn more about forking](/guides/forking.html).
+* **Switch project.** Navigate back to your [dashboard](/overview/dashboard.html).
 * **New project.** Create a new project.
 
 
 ## Map settings
 
-Map settings are accessed from the map sidebar via the more button (...) in the upper right corner.
+Map settings are accessed from the map sidebar via the ellipsis icon <i class="fa fa-ellipsis-h">  </i> in the upper right corner of the [side panel](/overview/map-editor.html#side-panel).
 
 <span class="small plain">
-![](../images/map-settings.jpg)
+![map settings](/images/map-settings.jpg)
 </span>
 
-Each map has the following settings:
+Each map has the following available actions:
+- Rename map
+- Duplicate map
+- Delete map
+- Make this the default map
+
+And each map has the following settings:
 
 * **Default view.** Select the default view for a map. This is the view that will automatically load when someone visits the map.
-* **Default element behavior.** Set whether new elements should be fixed or floating. **Note:** This does not change the behavior of existing elements (use `a` keystroke to select all and then pin/unpin).
+* **Default element behavior.** Set whether new elements should be fixed or floating. [Learn more about fixed and floating layouts](/guides/layouts.html).
 * **Default connection direction.** Set whether new connections should be undirected, directed, or mutual.
   * **Undirected.** No arrows will appear at either end of the connection.
-  * **Directed.** An arrow will appear at the leading end of the connection.
+  * **Directed.** An arrow will appear at the **To** end of the connection.
   * **Mutual.** Arrows will appear at both ends of the connection.
+
 
 ## View settings
 
-View settings are accessed via the settings button on the right side of the map.
+View settings are accessed via the Settings icon <i class="fa fa-sliders">  </i> on the right side of the map. If you want to save, rename, duplicate, or delete a view, you can click the ellipsis icon <i class="fa fa-ellipsis-h">  </i> in the upper right. You can also use that icon to set the default view for the current map.
 
 <span class="small plain">
-![](../images/view-settings.jpg)
+![view settings](/images/view-settings.png)
 </span>
 
-* **Element settings**
-  * **Default color.** Set the default color for all elements.
-  * **Default size.** Set the default size for all elements in the view.
-  * **Default label position.** Change the position of the label to either **bottom** (below the element) or **center** (centered within the element).
-* **Connection settings**
-  * **Default color.** Set the color of connections in the map. Note: use `inherit` to inherit element colors along a gradient.
-  * **Default width.** Change the default width of your connections.
-  * **Default curvature.** Set the default curvature for each connection.
-* **Font settings**
-  * **Default color.** Set the default font color across the map.
-  * **Default size.** Set the default size for all text on the map (elements, connections, and loops).
-* **Showcase settings**
-  * **Selector.** Build a selector to specify showcasing within the map.  
-* **Layout settings**
-  * **Preset.** Only applicable to the `force-directed` layout. Start with `auto` and move to `dense` or `hairball` as your map gets larger and more interconnected.
-* **General settings**
-  * **Theme.** Change the background color of the map between dark and light. Font color and buttons will change as well.
-  * **Template.** Switch the underlying template for the view. We’ve set up the templates to quickly get you started with building and decorating a map.
-  * **Quality.** Stick with `high` (circular elements, curved connections) unless you have a large map (>1000 elements). `Low/fast` (square elements, straight connections) improves the performance of large maps.
-  * **Layout.** Change the layout that drives the positions for elements. Turning the layout `off` will prompt you to pin all elements. `Force-directed` will position elements automatically using our custom algorithm.
- 
+To learn more about editing the view itself (for example, adding decorations, filtering, changing default settings, etc.), [read the guide on View Editors](/overview/view-editors.html).
+
 <span class="edit-link"><a href="https://github.com/kumu/docs/blob/master/overview/settings.md" target="_blank"><i class="fa fa-github"></i> edit this page</a></span>

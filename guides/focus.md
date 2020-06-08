@@ -1,14 +1,21 @@
 # Focus
 
-Focus is activated in one of two ways, by clicking and holding on any element, connection or loop or by selecting an element, connection or loop and then clicking the focus button in the bottom right of the selection profile. Once activated, you can walk in and out by degree using the "+" and "-" keys on your keyboard (don't hold shift, just hit the key).
+Kumu's **focus** feature allows you to focus on one or more elements, connections, and loops, temporarily hiding the rest of the map. It's a great tool for storytelling, allowing you to reduce the complexity of your system or network while you introduce the basic concepts behind your map.
 
-![focus animation](../images/focus.gif)
+Focus is activated in one of two ways, by clicking and holding on any element, connection or loop or by selecting an element, connection or loop and then clicking the focus icon <i class="fa fa-crosshairs">  </i> on the right side of your map. Once focus is activated, you can walk in and out by degree using the
+<i class="fa fa-angle-up">  </i> and <i class="fa fa-angle-down">  </i> buttons.
 
-If you click the focus button in the bottom right of the selection profile, you'll be prompted with a menu of how many degrees out you'd like to focus. Once focus is activated, you can click and hold on any element to bring that element's direct connections into view.
+![focus animation](../images/focus-expand-contract.gif)
 
-### Preset Focus
+Click the focus icon again to bring the full map back into view.
 
-You can also predefine a focus within `@settings` in the advanced editor of any view.
+<p class="alert alert-info">
+<b>Keyboard shortcuts:</b> Press <code>+</code> and <code>-</code> on your keyboard to expand and contract focus, or press a number on your keyboard to specify exactly how many degrees the focus should extend. Press <code>esc</code> on your keyboard to bring the full map back into view.
+</p>
+
+## Activate focus in the Advanced Editor
+
+You can pre-define a focus within `@settings` in the [Advanced Editor](/overview/view-editors.html#advanced-editor) of any view.
 
 ```
 @settings {
@@ -26,7 +33,7 @@ The above will load the map with Jack and any other elements that are within 2 d
 
 This will load the map with Jack and any other elements that are within 2 degrees, as well as Company XYZ and any elements that are directly connected.
 
-You can use any [selector](/selector-reference.md) to set the focus of the map. For example, you could set the focus to show only influential people, out 2 degrees:
+You can use any [selector](/guides/selector-reference.md) to set the focus of the map. For example, you could set the focus to show only influential people, out 2 degrees:
 
 ```
 @settings {

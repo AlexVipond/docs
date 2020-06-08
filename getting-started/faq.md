@@ -2,12 +2,12 @@
 
 ### Can I share my maps with others?
 
-Of course! [Create an embed](../guides/embeds.md) to share your map via a link or [add a collaborator](../guides/collaboration.md) to your project.
+Of course! [Create an embed](/guides/share-and-embed.md) to share your map via a link or [add a collaborator](/overview/collaboration.md) to your project.
 
 
 ### Do you have high resolution screenshots available? Or a PDF?
 
-We offer a paid service ($9 per PDF) to create a PDF of any map. Just send the link of your map to [prints@kumu.io](mailto:prints@kumu.io).
+We offer a paid service ($5 per PDF) to create a PDF of any map. Just send the link of your map to [prints@kumu.io](mailto:prints@kumu.io).
 
 ### How can I select all elements on my map? All connections?
 

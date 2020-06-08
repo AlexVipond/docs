@@ -1,5 +1,153 @@
 # Changelog
 
+## Version 3.1
+
+**Updated ksb, released 2020-02-10**
+
+Changes:
+- Added single sign on via SAML 2.0
+- Added password-protected embeds
+- Changed database encoding to utf8
+
+Known issues:
+- IE11 and under are not supported.
+- Importing private google sheets is not supported.
+- Embed slides within presentations do not work out of the box. Kumu uses
+  Embedly to handle these and we restrict requests to known referrers.
+  Please email the hostname you're using to enterprise@kumu.io to fix this.
+- Geocoding does not work out of the box. Customers must supply their own
+  ArcGIS developer credentials.
+
+## Version 3.0
+
+**Machine upgrade required, released 2019-09-05**
+
+Kumu Enterprise 3.0 received major updates and is the first version we
+will be offering through Kumu Enterprise Cloud. Along with the ability to
+launch managed enterprise instances in the cloud, this update includes a
+number of application changes along with a handful of dependency upgrades
+(including an upgrade to Ubuntu 18.04).
+
+Changes:
+- Enterprise cloud support
+- Enterprise customers can now use SAML 2.0 / SSO
+- Added PDF generator for unlimited, locally-generated PDFs
+- Added new force atlas layout
+- Added traversal selectors
+- Added tools for automatically reducing label overlap
+- Added radar / systems leverage template
+- Added title slides for presentations
+- Added bridging
+- Fixed a bug with the :orphan selector when working with remote imports
+- Fixed vensim bug fixes
+- Settings are now preserved in the table editor
+- Improved error handling for busted remote imports
+- Dropped support for view variables
+- Multiple security enhancements
+
+Known issues:
+- IE11 and under are not supported.
+- Importing private google sheets is not supported.
+- Embed slides within presentations do not work out of the box. Kumu uses
+  Embedly to handle these and we restrict requests to known referrers.
+  Please email the hostname you're using to enterprise@kumu.io to fix this.
+- Geocoding does not work out of the box. Customers must supply their own
+  ArcGIS developer credentials.
+  
+## Version 2.2
+
+**Updated ksb, released 2018-12-12**
+
+The latest release of Kumu Enterprise includes tools for collecting feedback on
+maps in real-time, recent-activity feeds to help you stay on top of project
+changes, view partials, bug fixes and more! Read on for the full list of changes.
+
+Changes:
+- Added real-time in-app commenting system
+- Added recent-activity feed
+- Added view partials and the new view-toggle control
+- Added the wizard (with label overlap removal helper)
+- Added SNA dashboard control
+- Added bridging, allowing elements to connect over shared neighbors
+- Added two new geo map styles, streets and satellite
+- Added multiple selectors (:focus, :directed/:undirected/:mutual, :delayed, :from/:to)
+- Added support for ignoring xlsx worksheets from imports using (ignore)
+- Simplified org structure (users can now be added directly to org projects)
+- Simplified the basic view editor
+- Simplified image uploads (profile, markdown, presentations)
+- Fixed view parser to handle pseudo-selectors and comments in @settings
+- Fixed markdown parser to better handle email addresses
+- Fixed zoom-fit behavior for embeds
+- Fixed search within presentation slides
+- Fixed search handling of non-latin characters
+
+Known issues:
+- IE11 and under are not supported.
+- Importing private google sheets is not supported.
+- Embed slides within presentations do not work out of the box. Kumu uses
+  Embedly to handle these and we restrict requests to known referrers.
+  Please email the hostname you're using to enterprise@kumu.io to fix this.
+- Geocoding does not work out of the box. Kumu uses Maptiler to handle these
+  and requests are restricted to known referrers. Please email the hostname
+  you're using to enterprise@kumu.io to fix.
+
+## Version 2.1
+
+**Updated KSB, released 2018-02-15**
+
+Minor update to the 2.0 release that fixes a bug which prevented admins from
+being able to assign static ips.
+
+If you are not experience networking issues you can ignore this update.
+
+Changes:
+- Fixed network config script to allow static ip assignments
+- Admins now have permission to edit /etc/network/interfaces manually if necessary
+
+Known issues:
+- IE11 and under are not supported.
+- Importing private google sheets is not supported.
+- Embed slides do not work within presentations out of the box. Kumu uses
+  Embedly to handle these we restrict requests to known referrers.
+  Please email the hostname you're using to enterprise@kumu.io to fix this.
+  
+## Version 2.0
+
+**Machine upgrade required, released 2018-01-22**
+
+New enterprise versioning scheme! Major versions bumps (eg 2.0 to 3.0) require
+a machine upgrade. Minor version bumps (eg 2.0 to 2.1) can be hotpatched using
+the latest ksb.
+
+Packages have been updated to the latest security versions.
+
+Changes:
+- Added geo renderer with built-in geocoding
+- Added flag decoration
+- Added popovers
+- Added element image uploads
+- Added real-time update notifications
+- Added support for google sheets based presentations
+- Added option to disable profiles
+- Added relative date selectors
+- Added SSL support (appliance now comes with SSL enabled by default)
+- Tweaked behavior of `ignore-orphans` so it is applied after clustering
+- Tweaked showcase behavior to zoom fit on entire showcase
+- Tweaked cluster behavior to automatically refresh on field changes
+- Fixed field privacy bug that prevented contributors from seeing private fields
+- Fixed XSS security issues
+- Fixed from/to sorting issues in Table
+- Fixed overeager autocomplete bug when creating new elements
+- Fixed advanced editor scrolling bug
+
+Known issues:
+- Static ip assignment busted (fixed in 2.1 release)
+- IE11 and under are not supported.
+- Importing private google sheets is not supported.
+- Embed slides do not work within presentations out of the box. Kumu uses
+  Embedly to handle these we restrict requests to known referrers.
+  Please email the hostname you're using to enterprise@kumu.io to fix this.
+  
 ## Version 1.8.0
 
 **Updated ksb, released 2017-03-07**

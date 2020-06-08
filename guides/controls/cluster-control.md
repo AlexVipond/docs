@@ -33,8 +33,8 @@ Cluster using custom [selectors](../selectors.html#selectors):
       }
 
       option {
-        value: person by "Geographic focus";
-        label: "Geography";
+        value: person by "Country";
+        label: "Country";
       }
 
       option {
@@ -60,6 +60,8 @@ Cluster using custom [selectors](../selectors.html#selectors):
 * `placeholder` the text to display when nothing is selected (for `as: dropdown` only)
 * `summary` override the summary that's shown for the current selection (for `as: dropdown`). The summary will be shown regardless of what's selected so there's no need to use `placeholder` in this case.
 * `default` defines which field values should be selected by default (for `by: "field"` only). Use `select-all` to select everything by default.
+
+[Check out our controls reference](/guides/controls/controls-reference.md) to see the full list of properties and values recognized by the cluster control.
 
 **Supported children**
 

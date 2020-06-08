@@ -1,4 +1,22 @@
-h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, table, td, dl, dt, dd, footer, input, .book .book-body .page-wrapper .page-inner section.normal a.btn {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+table,
+td,
+dl,
+dt,
+dd,
+footer,
+input,
+.book .book-body .page-wrapper .page-inner section.normal a.btn {
   font-family: "proxima-nova", "Proxima Nova", "Helvetica Neue", sans-serif;
 }
 
@@ -7,10 +25,20 @@ img {
   display: block;
 }
 
-.book .book-body .page-wrapper .page-inner #book-search-results p, .book .book-body .page-wrapper .page-inner section.normal p, .book .book-body .page-wrapper .page-inner section.normal a, .book .book-body .page-wrapper .page-inner section.normal ul, .book .book-body .page-wrapper .page-inner section.normal ol, .book .book-body .page-wrapper .page-inner section.normal li {
+.book .book-body .page-wrapper .page-inner #book-search-results p,
+.book .book-body .page-wrapper .page-inner section.normal p,
+.book .book-body .page-wrapper .page-inner section.normal ul,
+.book .book-body .page-wrapper .page-inner section.normal ol,
+.book .book-body .page-wrapper .page-inner section.normal li {
   font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 400;
+}
+
+.markdown-section a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
@@ -37,13 +65,15 @@ img {
   width: 600px;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal .plain, .book .book-body .page-wrapper .page-inner section.normal .plain img {
+.book .book-body .page-wrapper .page-inner section.normal .plain,
+.book .book-body .page-wrapper .page-inner section.normal .plain img {
   border: none;
   border-radius: 0;
   box-shadow: none;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal .plain, .book .book-body .page-wrapper .page-inner section.normal img {
+.book .book-body .page-wrapper .page-inner section.normal .plain,
+.book .book-body .page-wrapper .page-inner section.normal img {
   border: none;
   border-radius: 0;
   box-shadow: none;
@@ -228,20 +258,111 @@ a.plugin-anchor span {
 
 /* property table */
 
-table.property-table {
+table.property-reference {
   width: 100%;
 }
 
-.property-table tr td {
+.property-reference tr td {
   width: 25%;
 }
 
-.property-table td:first-child {
+.property-reference td:first-child {
   text-align: left;
 }
 
-.property-table td {
+.property-reference td {
   text-align: center;
+}
+
+.property-reference code {
+  color: #333;
+}
+
+/* controls reference table */
+
+table.controls-reference {
+  width: 100%;
+}
+
+.controls-reference td:first-child {
+  text-align: left;
+}
+
+.controls-reference td {
+  text-align: center;
+}
+
+.controls-reference code {
+  color: #333;
+}
+
+/* pricing plan table */
+
+table.plan-table {
+  width: 70%;
+}
+
+table.plan-table tr *:not(:first-child) {
+  text-align: right;
+}
+
+table.plan-table tr td:not(:first-child) {
+  font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+
+/* borderless table */
+
+.borderless.table tr,
+.borderless.table th,
+.borderless.table td,
+.borderless.table pre {
+    border: none;
+}
+
+/* border-bottom table */
+
+/* .border-bottom.table td {
+    vertical-align: middle;
+} */
+
+.border-bottom.table td,
+.border-bottom.table th {
+    background-color: #fff;
+    border: none;
+}
+
+.border-bottom.table tr:first-child {
+    border: none;
+}
+
+.border-bottom.table tr:nth-child(2) {
+    border-width: 2.5px;
+}
+
+.border-bottom.table pre {
+    border: none;
+}
+
+/* table search boxes */
+
+.search-box {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: .85em;
+    border: none;
+    border-left: 2px solid #ccc;
+}
+
+.search-box:focus {
+    outline: none;
+}
+
+/* inputs formatted like code */
+
+.input-code {
+  font-size: .85em;
+  background-color: #f7f7f7;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 /* keystrokes */
@@ -375,7 +496,7 @@ table.property-table {
   border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
   border: 1px solid #d8d8d8;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .guide-tile a.plugin-anchor {
@@ -458,6 +579,28 @@ video {
   width:100%;
   height:100%;
 }
+
+.alert-link {
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+}
+
+.alert-link:hover {
+  opacity: .75;
+}
+
+.alert-sm {
+  display: inline-block;
+  width: auto;
+  padding: 5px;
+  line-height: 1;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif !important;
+}
+
+.custom-link {
+  display: none !important;
+}
+
 
 /* FAQ guides hidden in menu */
 

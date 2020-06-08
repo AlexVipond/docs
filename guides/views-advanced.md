@@ -60,7 +60,7 @@ project.pending[priority=high] // all high priority projects tagged "pending"
 
 <p class="alert alert-info">
   The full list of supported selectors can be found in our
-  <a href="/guides/selector-reference.html">CSS Selector Reference</a>.
+  <a class="alert-link" href="/guides/selector-reference.html">Selector Reference</a>.
 </p>
 
 ### Step 2: Build your decorations
@@ -79,7 +79,7 @@ Now it's time to do some decorating! Below we'll increase Jack's size, change hi
 
 <p class="alert alert-info">
   The full suite of available properties can be found in our
-  <a href="/guides/property-reference.html">CSS Property Reference</a>.
+  <a class="alert-link" href="/guides/property-reference.html">Property Reference</a>.
 </p>
 
 ### Step 3: Add it to the legend (optional)
@@ -144,50 +144,6 @@ element {
   font-family: "Helvetica Neue", sans-serif;
 }
 ```
-
-## Imported views
-
-It's easy to layer perspectives so decorations and settings can be inherited from one perspective to another. This is a huge time saver for those of you using copy and paste to keep redundant decorations in sync.
-
-Give it a try by first creating a "base" perspective. Add a few decorations / settings and then create a second perspective that will import these styles. To activate the import, just add an @import rule to the top of the second perspective (in the advanced tab):
-
-```
-@import "base";
-```
-
-... where "base" is the name (or slug) of the perspective you want to import. And voila! The perspective now inherits all of the styles from the "base" perspective.
-
-Hopefully this makes it easier to keep a consistent look-and-feel across all the maps in your project! 
-
-Note: Remember that the slug of the perspective is the name with all special characters removed and any spaces converted to dashes. So a perspective named *Influential Leaders* would become `influential-leaders` in the `@import` setting.
-
-## Label Templates
-
-Easily customize how labels display on your map by including custom text, pulling in field values, or turning them off entirely.
-
-These can be used within @settings or as a separate rule:
-
-```
-@settings {
-  element-label: "{{location}}";
-}
-
-OR
-
-person {
-  label: "Born in {{location}}";
-}
-```
-
-Just use the `{{field name}}` format to bring in dynamic field values. Don't forget to wrap everything in quotes. You can also use a double space to force a line break.
-
-```
-@settings {
-  element-label: "{{label}}  {{location}}";
-}
-```
-
-Head over to the [blog](http://blog.kumu.io/introducing-label-templates/) for tips on how to make the most of [label templates](http://blog.kumu.io/introducing-label-templates/).
 
 ## @settings
 

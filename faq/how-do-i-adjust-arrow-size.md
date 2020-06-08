@@ -8,8 +8,8 @@ customize the arrow size:
 - `arrow-width`
 - `arrow-height`
 
-These properties can be used within @settings or within a connection rule.
-Generally you'll want to set `arrow-min-width` and `arrow-min-height` to 0 if you're
+These properties can be used within `@settings` or within a [connection decoration rule](/guides/decorate.md#decorate-in-the-advanced-editor) in the Advanced Editor.
+Generally you'll want to set `arrow-min-width` and `arrow-min-height` to `0` if you're
 sizing arrows manually.
 
 ```
@@ -23,3 +23,5 @@ sizing arrows manually.
 
 NOTE: both `arrow-width` and `arrow-height` are multiplied against the connection width so take that
 into consideration when setting the values.
+
+<span class="edit-link"><a href="https://github.com/kumu/docs/blob/master/faq/how-do-i-adjust-arrow-size.md" target="_blank"><i class="fa fa-github"></i> edit this page</a></span>

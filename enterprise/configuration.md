@@ -38,14 +38,29 @@ In order to enable email notifications, you'll need to add an external SMTP serv
 
 ## Hostname
 
-This is the hostname that will be used for any absolute links within the application (such as those included in notification emails).
+By default the app is accessible using the raw instance ip. If you would like to use a custom hostname you'll need to add the following DNS records:
+
+```
+A        kumu.example.  <instance ip>
+CNAME  *.kumu.example.  kumu.example.
+```
+
+Once the DNS records are in place you can update the hostname within the `/enterprise/admin` app.
+
+_Warning: Once the hostname is set the site can only be accessed via the custom hostname._
 
 ## SSH access
 
 [Add an SSH key][ssh] to enable access to the enterprise command-line utilities.
 
+## SSL
+
+To protect your instance, a self-signed SSL certificate is generated for you automatically when the instance first boots.
+
+Since the certificate is self-signed, you will have to click through warning prompts the first time you access the site. If you don't want users to see these warnings, you can use the `kumu-ssl-install-cert` and `kumu-ssl-install-key` [command line utilities](command-line-utilities.md) to upload a custom certificate.
+
 <footer class="page-footer">
-  <div class="next">Next: <a href="ssh-access.md">SSH Access</a></div>
+  <div class="next">Next: <a href="creating-user-accounts.md">Creating user accounts</a></div>
 </footer>
 
 
