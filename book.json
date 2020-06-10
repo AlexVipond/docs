@@ -2,7 +2,7 @@
     "gitbook": "3.2.3",
     "title": "Kumu Help Docs",
     "description": "",
-    "plugins": ["heading-anchors"],
+    "plugins": ["algolia", "heading-anchors"],
     "structure": {
         "readme": "welcome.md"
     },
@@ -10,7 +10,8 @@
         "algolia": {
             "index":         "help_docs",
             "applicationID": "23THKR3GLD",
-            "publicKey":     "ab592b719fd61c14cfd087597a9398d4"
+            "publicKey":     "ab592b719fd61c14cfd087597a9398d4",
+            "freeAccount": "true"
         }
     }
 }
